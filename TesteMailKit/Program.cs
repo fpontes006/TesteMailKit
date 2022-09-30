@@ -11,7 +11,7 @@ namespace TesteMailKit
         static void Main(string[] args)
         {
             //Verificar os parametros necessários para funcinar
-            var mails = EmailsMailKit.GetEmails("hostnameAqui", 0, true, "EmailAqui", "SenhaDoEmailAqui", StatusMessage.UNREAD, @"c:\temp\anexos");
+            var mails = EmailsMailKit.GetEmails("imap.gmail.com", 993, true, "fpontes006@gmail.com", "qfdljezbbapmpyin", StatusMessage.UNREAD, @"c:\temp\anexos");
             var ctx = new DataContext();
             var registros = ctx.Registros;
 
